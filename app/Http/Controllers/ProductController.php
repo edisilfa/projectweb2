@@ -64,7 +64,21 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        //update barang
+        $request->validate(
+            [
+                'nama_barang' => 'required',
+                'harga' => 'required|numeric',
+                'stok' => 'required|numeric',
+                'deskripsi' => 'required',
+            ]
+        );
+        //mencari product berdasarkan id
+        $product = \App\Models\Product::findOrFail($id);
+
+        //eksekusi update
+        $product->update($request->all());
+        return redirect()->route('products.index')->with('success', 'barang berhasil di update'); 
     }
 
     /**
@@ -72,6 +86,9 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        //eksekusi delete, berdasarkan id yang di eksekusi
+        $product =  \App\Models\Product::findOrFail($id);
+        $product->delete();
+        return redirect()->route('products.index')->with('success', 'barang berhasil di hapus');
     }
 }
