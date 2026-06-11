@@ -12,7 +12,7 @@
                     <input type="email" name="email" class="w-full border p-2 mb-3 rounded-2xl" required>
 
                     <label for="password" class="text-sm">Password</label>
-                    <input type="password" name="passsword" class="w-full border p-2 mb-3 rounded-2xl" required>
+                    <input type="password" name="password" class="w-full border p-2 mb-3 rounded-2xl" required>
 
                     <button type="submit" class="bg-blue-500 text-white w-full py-2 rounded-2xl">Login</button>
             </form>

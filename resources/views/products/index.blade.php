@@ -4,8 +4,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
-    <body>
-        <h1 class="text-2xl font-bold mb-8">Tabel produk Toko Roti</h1>
+    <body class="p-4">
+       @include('navbar')
         <button onclick="toggle_modal()" class="bg-green-500 text-white px-4 py-3 rounded-2xl">+ Tambah barang</button>
         <table class="table-auto w-full mt-5">
             <thead>
