@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ProductController extends Controller
 {
@@ -90,5 +91,15 @@ class ProductController extends Controller
         $product =  \App\Models\Product::findOrFail($id);
         $product->delete();
         return redirect()->route('products.index')->with('success', 'barang berhasil di hapus');
+    }
+
+    //Fungsi Download PDF
+    public function downloadPdf(){
+        //mengambil semua data product
+        $products = \App\Models\product::all();
+
+        //muat halaman view khusus (html+css) dan menggunakan data products
+        $pdf = Pdf::loadView('products/product_pdf', compact('products'));
+        return $pdf->download('Laporan-Data-Product-Tokoroti.pdf');
     }
 }
