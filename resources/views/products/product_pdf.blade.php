@@ -32,12 +32,13 @@
             text-align: center;
             background-color: rgb(231, 200, 27);
             font-weight: bold;
-            border: 1px solid rgb(212, 198, 35);
+            border: 1px solid rgb(0, 0, 0);
             padding: 8px;
         }
         td{
             border: 1px solid aliceblue;
             padding: 8px;
+            border: 1px solid rgb(0, 0, 0);
         }
         .text-center{
             text-align: center;
