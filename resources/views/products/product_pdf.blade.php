@@ -30,7 +30,7 @@
         }
         th{
             text-align: center;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(231, 200, 27);
             font-weight: bold;
             border: 1px solid rgb(212, 198, 35);
             padding: 8px;
