@@ -21,6 +21,8 @@
             font-weight: bold;
         }
         .table{
+            display: flex;
+            justify-content: center;
             width: 100%;
             border-collapse: collapse;    
         }
