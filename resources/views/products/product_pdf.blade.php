@@ -7,7 +7,7 @@
     <title>Laporan produk Tokoroti</title>
     <style>
         body{
-            font-size: 12px;
+            font-size: 15px;
             color: rgb(0, 0, 0);
             display: flex;
             justify-content: center;
@@ -19,7 +19,7 @@
             padding-bottom: 10px;
         }
         .title{
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
         }
         .table{
@@ -30,7 +30,7 @@
         }
         th{
             text-align: center;
-            background-color: azure;
+            background-color: rgb(0, 0, 0);
             font-weight: bold;
             border: 1px solid rgb(212, 198, 35);
             padding: 8px;
