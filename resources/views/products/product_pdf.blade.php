@@ -25,12 +25,14 @@
             border-collapse: collapse;    
         }
         th{
+            text-align: center;
             background-color: azure;
             font-weight: bold;
             border: 1px solid aliceblue;
             padding: 8px;
         }
         td{
+            text-align: center;
             border: 1px solid aliceblue;
             padding: 8px;
         }
@@ -59,8 +61,8 @@
                 <tr>
                     <td class="text-center">{{ $key+1 }}</td>
                     <td>{{ $p->nama_barang }}</td>
-                    <td>Rp. {{number_format($p->harga,0,',','.')}}</td>
                     <td>{{ $p->stok }}</td>
+                    <td>Rp. {{number_format($p->harga,0,',','.')}}</td>
                     <td>{{ $p->deskripsi }}</td>
                 </tr>
             @endforeach
