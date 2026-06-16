@@ -8,7 +8,7 @@
     <style>
         body{
             font-size: 12px;
-            color: bisque;
+            color: rgb(0, 0, 0);
         }
         .header{
             text-align: center;
