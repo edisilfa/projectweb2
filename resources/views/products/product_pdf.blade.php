@@ -9,6 +9,8 @@
         body{
             font-size: 12px;
             color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
         }
         .header{
             text-align: center;
