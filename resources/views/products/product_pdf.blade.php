@@ -50,7 +50,7 @@
         <div class="title">LAPORAN DATA PRODUK TOKOROTI</div>
         <p>Dicetak oleh sistem, kalo salah salahin yang bikin sistem</p>
     </div>
-    <table>
+    <table align="center">
         <thead>
             <tr>
                 <th style="width: 5%">NO</th>
