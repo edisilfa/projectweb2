@@ -100,6 +100,6 @@ class ProductController extends Controller
 
         //muat halaman view khusus (html+css) dan menggunakan data products
         $pdf = Pdf::loadView('products/product_pdf', compact('products'));
-        return $pdf->download('Laporan-Data-Product-Tokoroti.pdf');
+        return $pdf->download('Laporan-Data-Product-Myflorist.pdf');
     }
 }

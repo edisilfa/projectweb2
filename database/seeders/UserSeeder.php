@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     {
         //Buat 1 Akun
         User::create([
-                'name'=>'Admin TokoRoti',
-                'email'=>'admin@tokoroti.com',
+                'name'=>'Admin Myflorist',
+                'email'=>'admin@myflorist.com',
                 'password'=>Hash::make('admin123'),
             ]
         );

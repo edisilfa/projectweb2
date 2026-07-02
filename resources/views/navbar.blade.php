@@ -1,7 +1,7 @@
 <nav class="bg-white shadow-sm mb-6">
     <div class="w-full px-6 py-3 flex justify-between items-center">
         <div class="flex items-center gap-8">
-            <span class="font-bold text-lg text-green-600 tracking-wide">Toko Roti</span>
+            <span class="font-bold text-lg text-green-600 tracking-wide">MyFlorist</span>
             <div class="flex gap-5 text-sm font-medium">
                 {{-- Menu Produk --}}
                 <a href="{{ route('products.index') }}"
