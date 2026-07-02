@@ -7,18 +7,18 @@
     <body class="p-4">
        @include('navbar')
        <div class="flex gap-2 mb-5">
-        <button onclick="toggle_modal()" class="bg-green-500 text-white px-4 py-3 rounded-2xl">
+        <button onclick="toggle_modal()" class="bg-blue-500 text-white px-4 py-3 rounded-2xl">
             + Tambah barang
         </button>
         <a href="{{ route('products.pdf') }}" class="bg-red-600 text-white px-4 py-2 rounded-2xl font-medium flex items-center gap-1 hover:bg-red-800 transition">
-            <span class="material-icons text-sm">picture_as_pdf</span>Simpan sebagai pdf
+            <span class="material-icons text-sm">picture_as_pdf</span>Cetak Laporan pdf
         </a>
        </div>
         
         <table class="table-auto w-full mt-5">
             <thead>
-                <tr class="bg-blue-200">
-                    <th class="border p-2">Nama Roti</th>
+                <tr class="bg-green-200">
+                    <th class="border p-2">Nama bunga</th>
                     <th class="border p-2">Harga</th>
                     <th class="border p-2">Stok</th>
                     <th class="border p-2">Deskirpsi</th>
@@ -69,7 +69,7 @@
                     <textarea name="deskripsi" class="w-full border p-2 mb-3 rounded"></textarea>
                     <div class="flex justify-end gap-3 mt-2">
                         <button type="button" onclick="toggle_modal()" class="text-white-500">Batal</button>
-                        <button type="submit" class="bg-green-400 text-white px-4 py-2 rounded-2xl">Simpan</button>
+                        <button type="submit" class="bg-blue-400 text-white px-4 py-2 rounded-2xl">Simpan</button>
                     </div>
                 </form>
             </div>
