@@ -18,7 +18,7 @@
         <table class="table-auto w-full mt-5">
             <thead>
                 <tr class="bg-green-200">
-                    <th class="border p-2">Nama bunga</th>
+                    <th class="border p-2">Nama roti</th>
                     <th class="border p-2">Harga</th>
                     <th class="border p-2">Stok</th>
                     <th class="border p-2">Deskirpsi</th>

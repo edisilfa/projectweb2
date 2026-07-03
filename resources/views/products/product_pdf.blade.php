@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laporan barang Myflorist</title>
+    <title>Laporan Data TokoRoti</title>
     <style>
         body{
             font-size: 15px;
@@ -47,14 +47,14 @@
 </head>
 <body>
     <div class="header">
-        <div class="title">LAPORAN DATA BARANG Myflorist</div>
-        <p>Dicetak dari Sistem</p>
+        <div class="title">LAPORAN DATA BARANG TokoRoti</div>
+        <p>Dicetak dari Sistem, kalau salah salahin sistem nya</p>
     </div>
     <table align="center">
         <thead>
             <tr>
                 <th style="width: 5%">NO</th>
-                <th>Nama bunga</th>
+                <th>Nama Roti</th>
                 <th>Stok</th>
                 <th>Harga</th>
                 <th>Deskripsi</th>
