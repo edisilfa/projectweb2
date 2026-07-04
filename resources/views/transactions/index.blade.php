@@ -41,7 +41,7 @@
         </select>
         <label for="qty" class="text-gray-800 block mb-1"></label>
         <input type="number" name="qty" min="1" value="1" class="border p-2 mb-5 rounded bg-amber-200" focus:bg-white">
-
+        <br>
         <button type="submit" class="bg-blue-400 hover:bg-emerald-500 text-white py-2.5 rounded font-medium">
             <span class="material-icons text-lg">save</span> Simpan Transaksi
         </button>
