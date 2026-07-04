@@ -31,7 +31,7 @@
         @csrf
 
         <label for="product_id" class="text-gray-800 block mb-1">Pilih Barang</label>
-        <select name="product_id" class="w-full border p-2 mb-4 rounded bg-amber-200" focus:bg-white>
+        <select name="product_id" class="border p-2 mb-4 rounded bg-amber-200" focus:bg-white>
         <option value="">--Pilih Item--</option>
         @foreach ($products as $p)
             <option value="{{ $p->id }}">
