@@ -14,7 +14,12 @@
                 Item
                 </a>
                 {{-- Tombol Transaksi --}}
-                <a href="#" class="text-gray-500 hover:text-blue-500 flex items-center gap-1 transition">
+                <a href="{{ route('transactions.index') }}" class="text-gray-500 hover:text-blue-500 flex items-center gap-1 transition">
+                    class="{{request()->routeIs('transactions.index')?
+                    'text-blue-500 border-b-2 border-green-500 pb-1':
+                    'text-gray-500 hover:text-blue-500'}}
+                    flex items-center gap-1">
+
                     <span class="material-icons text-base">receipt_long</span>
                     Transaksi
                 </a>

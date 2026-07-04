@@ -13,4 +13,5 @@ Route::post('/logout',[AuthController::class,'logout'])->name('logout');
 Route::middleware('auth')->group(function(){
     Route::get('/products/download-pdf', [ProductController::class, 'downloadPdf'])->name('products.pdf');
     Route::resource('products', ProductController::class);
+    Route::get('transactions',[TransactionsController::class, 'index'])->name('transactions.index');
 });
