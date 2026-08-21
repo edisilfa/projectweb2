@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\transactions;
+use App\Models\transaction;
 use App\Models\transaction_detail;
 use Illuminate\Http\Request;
 use App\Models\product;
@@ -19,7 +19,7 @@ class TransactionController extends Controller
     public function store(Request $request){
         request->validate(
             [
-                'product_id'=>'required|exists::product,id',
+                'product_id'=>'required|exists:product,id',
                 'qty'=> 'required|numeric|min:1'
             ]
         );
