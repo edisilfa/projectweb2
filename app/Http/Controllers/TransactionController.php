@@ -16,17 +16,24 @@ class TransactionController extends Controller
         return view('transactions.index', compact('products'));
     }
 
+    public function history(){
+        $history = transaction::with('details.product')->latest()->get();
+        return view('transactions.history', compact('history'));
+    }
+
     public function store(Request $request){
+        //Validasi INput
         $request->validate(
             [
-                'product_id'=>'required|exists:product,id',
+                'product_id'=>'required|exists:products,id',
                 'qty'=> 'required|numeric|min:1'
             ]
         );
         //ambil product
         $product = product::findOrFail($request->product_id);
 
-
+        //cek apakah stok mencukupi
+        //jika tidak maka akan mengirim pesan (qty)error
         if($product->stok < $request->qty){
             return back()->withErrors(['qty_error','Stok tidak mencukupi']);
         }
@@ -44,7 +51,7 @@ class TransactionController extends Controller
             //create detail transactions
             transaction_detail::create([
                 'transaction_id'=>$transaction->id,
-                'product_id'=>$product_id,
+                'product_id'=>$product->id,
                 'qty'=>$request->qty,
                 'harga_satuan'=>$product->harga,
                 'subtotal'=>$subtotal,
@@ -55,6 +62,6 @@ class TransactionController extends Controller
            
         });
          //Arahkan kembali ke halaman form
-            return redirect()->route(transactions.index)->with('success','Transaksi berhasil di simpan!');
+            return redirect()->route('transactions.index')->with('success','Transaksi berhasil di simpan!');
     }
 }

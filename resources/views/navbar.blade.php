@@ -23,6 +23,18 @@
                     <span class="material-icons text-base">receipt_long</span>
                     Transaksi
                 </a>
+
+                {{-- Menu History --}}
+                <a href="{{ route('transactions.history') }}" class="text-gray-500 hover:text-blue-500 flex items-center gap-1 transition"
+                    class="{{request()->routeIs('transactions.history')?
+                    'text-blue-500 border-b-2 border-green-500 pb-1':
+                    'text-gray-500 hover:text-blue-500'}}
+                    flex items-center gap-1">
+
+                    <span class="material-icons text-base">history</span>
+                    Riwayat
+                </a>
+
             </div>
         </div>
             {{-- Tombol Logout --}}
