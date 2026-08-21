@@ -24,10 +24,10 @@ class TransactionController extends Controller
             ]
         );
         //ambil product
-        $product = product::findOrFail(request->product_id);
+        $product = product::findOrFail($request->product_id);
 
 
-        if(product->stok < $request->qty){
+        if($product->stok < $request->qty){
             return back()->withErrors(['qty_error','Stok tidak mencukupi']);
         }
 
