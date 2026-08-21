@@ -49,6 +49,12 @@ class TransactionController extends Controller
                 'harga_satuan'=>$product->harga,
                 'subtotal'=>$subtotal,
             ]);
+            //Potong Stok
+            $product->decrement('stok',$request->qty);
+
+           
         });
+         //Arahkan kembali ke halaman form
+            return redirect()->route(transactions.index)->with('success','Transaksi berhasil di simpan!');
     }
 }
