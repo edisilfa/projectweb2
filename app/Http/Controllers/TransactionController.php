@@ -17,7 +17,7 @@ class TransactionController extends Controller
     }
 
     public function store(Request $request){
-        request->validate(
+        $request->validate(
             [
                 'product_id'=>'required|exists:product,id',
                 'qty'=> 'required|numeric|min:1'
