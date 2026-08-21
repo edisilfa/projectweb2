@@ -27,7 +27,7 @@
             </div>    
         @enderror
     </div>
-    <form action="{{ route('transaction.store') }}" method="post">
+    <form action="{{ route('transactions.store') }}" method="post">
         @csrf
 
         <label for="product_id" class="text-gray-800 block mb-1">Pilih Barang</label>
